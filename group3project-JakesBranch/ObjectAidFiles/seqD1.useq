@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.appUI.UIController" project="group3project-JakesBranch" 
+    file="/group3project-JakesBranch/src/com/appUI/UIController.java" binary="false" label="uiController" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="210" width="0" x="0" y="801"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.process.Analysis" project="group3project-JakesBranch" 
+    file="/group3project-JakesBranch/src/com/process/Analysis.java" binary="false" label="analysis" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="168" width="0" x="0" y="822"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="com.process.AnalysisConfirmedCases" project="group3project-JakesBranch" 
+    file="/group3project-JakesBranch/src/com/process/AnalysisConfirmedCases.java" binary="false" 
+    label="analysisConfirmedCases" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="126" width="0" x="0" y="843"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.util.APIReader" project="group3project-JakesBranch" 
+    file="/group3project-JakesBranch/src/com/util/APIReader.java" binary="false" label="apiReader" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="84" width="0" x="0" y="864"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="906"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="performAnalysis(java.lang.String,java.lang.String):double" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="getConfirmedCasesByCountry(java.lang.String):double" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="fetchFromAPI(java.lang.String):com.data.API[]" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="retrieveData(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>
+</sequence-diagram>
